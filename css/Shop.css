@@ -1,0 +1,13 @@
+.content-container2 {
+    position: absolute;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 1100px; /* Ancho máximo */
+    height: auto; /* Altura automática basada en el contenido */
+    top: 200px; /* Posición vertical */
+    left: 50%; /* Posición horizontal centrada */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    text-align: center;
+  }

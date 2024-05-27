@@ -1,0 +1,191 @@
+/* Estilos para el contenedor principal */
+.contenedorGeneral {
+  width: 1100px;
+  padding: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+/* Estilos para el contenedor principal */
+.contenedorImagenes {
+  width: 1100px;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.content-container {
+  width: 1100px; /* Establece un ancho máximo */
+  height: 200px; /* Establece una altura fija */
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+  padding: 40px; /* Agrega un relleno interior de 40px */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: center; /* Centra el texto horizontalmente */
+  gap: 20px; /* Espacio entre elementos internos */
+  border: 0.5px solid black;
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Alinea los elementos en una columna */
+  margin-top: 20px; /* Añade espacio superior para separación */
+  position: relative; /* Permite que el contenedor de imágenes se posicione correctamente */
+
+  animation-duration: 1.7s; /* Duración de la animación */
+  animation-name: fadeInDown; /* Nombre de la animación */
+}
+
+
+/* Estilos específicos para el nuevo contenedor */
+
+
+
+
+.message {
+  position: absolute; /* Se posiciona de forma absoluta en relación al contenedor padre */
+  top: 50%; /* Ajusta la posición vertical */
+  left: 50%; /* Se mueve hacia la derecha desde el borde izquierdo del contenedor padre un 50% de su anchura */
+  transform: translate(-50%, -50%); /* Se ajusta el elemento hacia arriba y hacia la izquierda un 50% de su propio tamaño,
+  para centrarlo tanto vertical como horizontalmente en relación a su contenedor padre */
+}
+
+.message h1 {
+  font-size: 3em; /* Establece el tamaño de fuente del h1 a 2em */
+  color: rgba(12, 10, 128, 0.932);
+  margin-top: 0; /* Elimina el margen superior */
+  margin-bottom: 0.5em; /* Ajusta el margen inferior según sea necesario */
+}
+
+.message h2{
+  color: mediumvioletred;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.message p {
+  font-size: 1.0em; /* Establece el tamaño de fuente del párrafo a 1em */
+  line-height: 1; /* Ajusta el espacio entre líneas */
+}
+
+.message p {
+  font-size: 1.0em; /* Establece el tamaño de fuente del párrafo a 1em */
+  line-height: 1.5; /* Ajusta el espacio entre líneas a 1.5 */
+  margin: 0.5px;
+}
+
+/*Acomdar los logos*/
+
+.image-left {
+  position: absolute;
+  top: 10PX;    /*Ajusta segun el diseño*/
+  left: 53px;   /*Ajusta segun el diseño*/
+  z-index: 1;   /*para asegurarce de que estén sobre los contenedores*/
+  width: 200px;
+  max-width: 100%;
+}
+
+.image-right {
+  position: absolute;
+  top: 20px;   /* Ajusta según el diseño */
+  right: 100px; /* Ajusta según el diseño */
+  z-index: 1;  /* Para asegurarse de que estén sobre los contenedores */
+  width: 100px; /* Tamaño de la imagen */
+  border-top-right-radius: 20px; /* Redondea la esquina superior derecha */
+  max-width: 100%;
+
+}
+
+
+.logo1 {
+  position: absolute;
+  top: 20px;   /* Ajusta según el diseño */
+  right: 40; /* Ajusta según el diseño */
+  z-index: 1;  /* Para asegurarse de que estén sobre los contenedores */
+  width: 160px; /* Tamaño de la imagen */
+  padding: 5px; /* Espacio alrededor de la imagen */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo cuadrado */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  animation: shine2 2s infinite; /* Animación brillante */
+}
+
+/* Estilos para la imagen del logo */
+.logo2 {
+  position: absolute;
+  top: 20px;   /* Ajusta según el diseño */
+  right: 53px; /* Ajusta según el diseño */
+  z-index: 2;  /* Para asegurarse de que estén sobre los contenedores */
+  width: 160px; /* Tamaño de la imagen */
+  padding: 5px; /* Espacio alrededor de la imagen */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo cuadrado */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  animation: shine2 2s infinite; /* Animación brillante */
+}
+
+/* Estilos del botón neon morado */
+.neon-button {
+  display: inline-block;
+  padding: 20px 20px;
+  background-color: rgba(128, 0, 128, 0.9);
+  color: #fff;
+  font-size: 1em;
+  border: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: absolute ;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.5s;
+}
+
+.neon-button:hover {
+  background-color: rgba(128, 0, 128, 0.8);
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.8),
+              0 0 20px rgba(128, 0, 163, 0.8),
+              0 0 20px rgba(34, 66, 209, 0.8);
+}
+
+/* Estilos para la imagen del logo */
+
+
+/* Definición de la animación brillante */
+@keyframes shine2 {
+  0% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1);
+  }
+  100% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+}
+
+ /* Ancho Barra */
+.content-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Fondo color barra */
+.content-container::-webkit-scrollbar-track {
+  background-color: #8b008b;
+}
+
+
+.content-container::-webkit-scrollbar-thumb {
+  background-color: #22aec7; /* Cambia el color del control deslizante */
+  border-radius: 5px; /* Ajusta el borde del control deslizante */
+  transition: background-color 0.5s;
+}
+
+/* Estilo del control deslizante de la barra de desplazamiento al pasar el mouse */
+.content-container::-webkit-scrollbar-thumb:hover {
+  background-color: #9976aa; /* Cambia el color del control deslizante al pasar el mouse */
+}
